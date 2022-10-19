@@ -12,5 +12,5 @@
         "node_modules/@wdio/sync",
         "node_modules/@wdio/mocha-framework"
     ]
-, "test/Practice/adminLogInTest.js"    
+  
 }
