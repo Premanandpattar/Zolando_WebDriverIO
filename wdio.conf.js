@@ -27,7 +27,7 @@ exports.config = {
 
     suites:{
         smokesuite: ["./test/specs/userNewAccountCreationTest.js"],
-        regresionsuite: ["./test/specs/TestCase01.js"]
+        regresionsuite: ["./test/specs/createCategorySubCategoryInsertProduct.js"]
     },
 
     // Patterns to exclude.
@@ -162,12 +162,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    // reporters: ['spec'],
-    reporters: [['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
-    }]],
+    reporters: ['spec'],
+    // reporters: [['allure', {
+    //     outputDir: 'allure-results',
+    //     disableWebdriverStepsReporting: true,
+    //     disableWebdriverScreenshotsReporting: false,
+    // }]],
     // reporters: [
     //     [video, {
     //       saveAllVideos: false,       // If true, also saves videos for successful test cases

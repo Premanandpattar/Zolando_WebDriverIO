@@ -4,7 +4,7 @@
     "description": "",
     "private": true,
     "keywords": [],
-    "author": "",
+    "author": "Premanand",
     "license": "ISC",
     "devDependencies": {
         "@wdio/allure-reporter": "^7.25.2",
@@ -18,9 +18,10 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
-        "test":"npx wdio run ./wdio.conf.js --spec example.e2e.js"
+        "test": "npx wdio run ./wdio.conf.js --spec example.e2e.js"
     },
     "dependencies": {
+        "chai": "^4.3.6",
         "wdio-video-reporter": "^3.2.3",
         "xlsx": "^0.18.5"
     }

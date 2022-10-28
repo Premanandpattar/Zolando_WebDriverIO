@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666330899657' stop='1666330932744'>
+    <name>log in test</name>
+    <title>log in test</title>
+    <test-cases>
+        <test-case start='1666330899660' status='passed' stop='1666330915752'>
+            <name>launch url Test - reg</name>
+            <title>launch url Test - reg</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666330915763' status='failed' stop='1666330932730'>
+            <name>admin log in Test - reg</name>
+            <title>admin log in Test - reg</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='d03b60c0-759b-4667-bf34-fcf39399a24c-attachment.png' type='image/png' size='63650'/>
+                <attachment title='Screenshot' source='13a37eba-e925-4747-abeb-fe2874e5107f-attachment.png' type='image/png' size='63650'/>
+                <attachment title='Screenshot' source='a2e90c65-7b89-4e50-9b91-3e000eb395ef-attachment.png' type='image/png' size='63650'/>
+                <attachment title='Screenshot' source='4c517505-36c1-4a72-a43d-2038278d4497-attachment.png' type='image/png' size='63650'/>
+            </attachments>
+            <failure>
+                <message>it is not equal: expected 'Invalid username or password' to equal 'Invalid username or passwo'      
+                      actual expected
+                      
+                      'Invalid username or passwordpasswo'
+                      </message>
+                <stack-trace>AssertionError: it is not equal: expected 'Invalid username or password' to equal 'Invalid username or passwo'
+                    at Context.&lt;anonymous> (E:\JAVA_SCRIPT\Zolando_wdio\test\specs\adminLogInTest.js:21:37)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

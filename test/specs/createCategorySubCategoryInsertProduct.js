@@ -14,7 +14,7 @@ const UpdateProductStatusPage = require(`../pageobjects/UpdateProductStatusPage`
 const userCommanPage = require("../pageobjects/userCommanPage")
 
 
-describe('EndTOEnd01', () => {
+describe('createCategorySubCategoryInsertProduct', () => {
     const getRandomNum = Math.ceil((Math.random()) * 1000)
     const categoryName = `Fashion ${getRandomNum}`
     const subCategoryName = `Men ${getRandomNum}`

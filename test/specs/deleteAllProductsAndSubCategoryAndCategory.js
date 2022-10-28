@@ -6,7 +6,8 @@ const insertProductPage = require(`../pageobjects/insertProductPage`)
 const manageProductPage = require(`../pageobjects/manageProductPage`)
 
 
-describe('deleteAllProductsAndSubCategoryAndCategory Test', () => {
+describe('deleteAllProductsAndSubCategoryAndCategory Test', function adv (){
+    this.retries(3)
     it('launch url Test', async () => {
         await browser.maximizeWindow()
         await browser.url("http://rmgtestingserver/domain/Online_Shopping_Application/admin/")
@@ -19,7 +20,8 @@ describe('deleteAllProductsAndSubCategoryAndCategory Test', () => {
         await expect(browser).toHaveTitle("Admin| Change Password")
     });
 
-    it('delete all product Test', async () => {
+    it('delete all product Test', async function ff(){
+        
         await manageProductPage.goToManageProductPage()
         await expect(browser).toHaveTitle("Admin| Manage Products")
         await manageProductPage.deleteAllProduct()
@@ -35,7 +37,7 @@ describe('deleteAllProductsAndSubCategoryAndCategory Test', () => {
         await createCategoryPage.goToCreateCaytegoryPage()
         await expect(browser).toHaveTitle("Admin| Category")
         await createCategoryPage.deleteAllCategory()
-        
+
     });
 
     it("admin log out Test", async () => {
